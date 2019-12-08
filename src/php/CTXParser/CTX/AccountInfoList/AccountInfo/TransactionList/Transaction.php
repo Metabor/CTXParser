@@ -50,4 +50,6 @@ class Transaction extends Struct
     public $remoteIban;
     public $remoteBic;
     public $sequenceType;
+    public $creditorSchemeId;
+    public $mandateId;
 }
