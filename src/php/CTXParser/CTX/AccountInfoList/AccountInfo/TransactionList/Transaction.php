@@ -43,4 +43,11 @@ class Transaction extends Struct
     public $subType;
     public $status;
     public $charge;
+    public $localCountry;
+    public $localIban;
+    public $localBic;
+    public $remoteCountry;
+    public $remoteIban;
+    public $remoteBic;
+    public $sequenceType;
 }

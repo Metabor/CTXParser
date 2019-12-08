@@ -14,4 +14,5 @@ class Status extends Struct
 {
     public $time;
     public $notedBalance;
+    public $bookedBalance;
 }

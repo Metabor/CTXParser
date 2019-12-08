@@ -5,3 +5,4 @@ vendor
 composer.phar
 build.properties.local
 src/config/config.ini
+/.idea/
