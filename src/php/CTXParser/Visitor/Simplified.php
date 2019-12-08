@@ -115,6 +115,14 @@ class Simplified extends Visitor
             $transaction->valutaDate[0]->date[0]->day,
             $transaction->valutaDate[0]->date[0]->year
         );
+        $new->bookingDate   = gmmktime(
+            $transaction->date[0]->time[0]->hour - $transaction->date[0]->inUtc,
+            $transaction->date[0]->time[0]->min,
+            $transaction->date[0]->time[0]->sec,
+            $transaction->date[0]->date[0]->month,
+            $transaction->date[0]->date[0]->day,
+            $transaction->date[0]->date[0]->year
+        );
         return $new;
     }
 }

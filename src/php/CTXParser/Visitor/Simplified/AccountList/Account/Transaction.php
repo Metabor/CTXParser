@@ -15,6 +15,7 @@ class Transaction extends Struct
     public $bankCode;
     public $accountNumber;
     public $name;
+    public $bookingDate;
     public $date;
     public $value;
     public $currency;
