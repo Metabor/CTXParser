@@ -177,6 +177,9 @@ class Parser
             case $type === 'char' &&
                  preg_match('(^(?P<value>-?\\d+)%2F100$)', $value, $match):
                 return $match['value'] / 100;
+            case $type === 'char' &&
+                preg_match('(^(?P<value>-?\\d+)%2F10$)', $value, $match):
+                return $match['value'] / 10;
             case $type === 'char':
                 return (string) urldecode($value);
             default:
